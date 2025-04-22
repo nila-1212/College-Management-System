@@ -1,0 +1,1050 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Agdasima:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Mincho&display=swap');
+
+/* universal section open */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    width: 100%
+}
+
+body {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden;
+}
+/* universal section close*/
+
+/* common class open */
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.com-gap {
+
+    padding: 100px 0px;
+
+}
+
+.cmn-btn {
+    font-size: 16px;
+    padding: 10px 32px;
+    border-radius: 50px;
+    border: 3px solid var(--landing-page-text-color);
+    display: inline-block;
+    font-weight: 450;
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    background: linear-gradient(to right, transparent 50%, #518170 50%);
+    background-size: 200%;
+    background-position: 0%;
+}
+
+.cmn-btn:hover {
+    
+    border: 3px solid var(--goldenrod);
+    color: var(--white-color);
+    transition: 2s ease;
+    background-position: 100%;
+
+}
+
+:root {
+
+
+    --primary-color: #000;
+    --secondary-color: #9c702f;
+    --action: #216296;
+    --banner-text-color: #fdf0ae;
+    --about-banner-text-color: #d89e52;
+    --banner-heading-style: rgb(166, 170, 175);
+    --gray: #515253;
+    --white-color: #fff;
+    --light-grayish-yellow: #dddbb6;
+    --logo-section-box-color: #f1f9f8;
+    --teacher-section-text-color: #99999a;
+    --burnt-sienna-color: #eb7412;
+    --landing-page-text-color:#35736E;
+    --goldenrod: #DAA520;
+
+
+
+}
+
+h1,
+.heading-1 {
+
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--banner-text-color);
+}
+
+h2,
+.heading-2 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+
+}
+
+h3,
+.heading-3 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+h4,
+.heading-4 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+h5,
+.heading-5 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+/* common class close*/
+
+
+/* nav section open */
+
+.header-section {
+
+
+    padding: 15px 0px;
+    /* background: linear-gradient(to right, #545341, #2b2b27); */
+    position: absolute;
+    width: 100%;
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.nav-logo {
+
+    width: 160px;
+    display: block;
+
+}
+
+.nav-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-list li {
+    margin: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.nav-list li a {
+
+    text-transform: capitalize;
+    padding: 9px 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--navbar-color);
+    position: relative;
+
+}
+
+
+
+.nav-list li a::before {
+
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--burnt-sienna-color);
+    bottom: 0px;
+    position: absolute;
+    transition: 1s all ease;
+}
+
+.nav-list li a:hover::before {
+
+    width: 100%;
+   
+
+
+}
+
+
+#action {
+    color: var(--action);
+}
+
+#action:hover{
+    color: var(--burnt-sienna-color);
+}
+
+.nav-list li a:hover {
+    color: var(--burnt-sienna-color);
+}
+
+
+.icons {
+
+    font-size: 20px;
+    color: var(--primary-color);
+
+}
+
+
+.icons {
+
+    display: none;
+    font-size: 20px;
+    color: var(--secondary-color);
+
+}
+
+.nav ul.show {
+
+    left: 100%;
+
+}
+
+/* nav section end */
+
+/* banner section open */
+
+.banner-section {
+    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, .1)), url('../photos/about\ banner\ 2.jpg');
+    min-height: 100vh;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom:2px solid var(--white-color);
+
+}
+
+
+
+/* banner section close */
+
+/* about us section open  */
+
+
+.about-us-section {
+    background: linear-gradient(to top, #4b4b4a, #c4d2c2, #6f6f66);
+    border-bottom: 2px solid var(--white-color);
+}
+
+.about-us-section-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 -15px;
+
+}
+
+.about-left-image,
+.right-text {
+    width: 50%;
+    padding: 0 15px;
+}
+
+#abt-text-style {
+    color: var(--secondary-color);
+}
+
+.right-text p {
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--gray);
+    margin: 0px 0px 15px 0px;
+}
+
+.about-left-image img {
+    border: 3px solid var(--banner-text-color);
+}
+
+
+.main-skil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.abt-paragraph {
+    padding: 0px 0px 10px 0px;
+}
+
+.about-left-image img {
+    border-start-start-radius: 30px;
+    border-end-end-radius: 30px;
+
+}
+
+
+.right-text-skil a i {
+    color: var(--primary-color);
+}
+
+.left-text-skil a i {
+    color: var(--primary-color);
+}
+
+
+
+/* about us section close */
+
+/* our college campus drive open */
+
+.college-campus-section {
+
+
+    background: linear-gradient(to bottom, rgba(46, 45, 32, 0.9), rgba(93, 95, 92, 0.1)), url('../photos/about\ banner\ 2.jpg')fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.college-campus-section-child {
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.campus-drive {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 0px 0px 0px;
+
+}
+
+.our-college {
+    width:32%;
+    border-radius: 10px;
+    padding: 0px 0px 40px 0px;
+    border: 2px solid var(--banner-text-color);
+    /* box-shadow: 3px 3px 15px 3px var(--secondary-color); */
+}
+
+.our-college:hover {
+    box-shadow: 3px 3px 13px 3px var(--gray);
+}
+
+.our-college img {
+    border-radius: 10px;
+}
+
+
+
+.our-college p {
+    margin: 7px 7px;
+    line-height: 1.1;
+    font-weight: 200;
+    color: var(--gray);
+}
+
+#campus-text-style {
+    color: var(--secondary-color);
+}
+
+.our-college {
+    background-color: var(--logo-section-box-color);
+}
+
+.our-college:hover {
+    /* background: linear-gradient(to top, #b3c05f, #aa7538); */
+    /* background: linear-gradient(to top, #e3dd5d, #ed1a80); */
+    background: linear-gradient(to top, #c7c686, #4a6c72);
+}
+
+/* our college campus drive close */
+
+/* footer section open */
+.footer-section{
+
+    background: linear-gradient(to bottom, #545341, #2b2b27);
+}
+
+.footer-section-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+    padding: 30px 0px 0px 0px;
+
+}
+
+.footer-logo {
+    display: block;
+    width: 160px;
+}
+
+.footer {
+    max-width: 260px;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+
+}
+
+.footer-list li a {
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white-color);
+    position: relative;
+
+}
+.footer-list li a::before {
+
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--burnt-sienna-color);
+    bottom: 0px;
+    position: absolute;
+    transition: 1s all ease;
+}
+
+
+.footer-list li a:hover::before {
+
+    width: 100%;
+    
+   
+}
+.footer-list li {
+    padding: 0px 0px 15px 0px;
+}
+
+.footer-list li a:hover {
+    color: var(--burnt-sienna-color);
+}
+
+
+.footer p {
+    margin: 0px 0px 20px 0px;
+    line-height: 1.1;
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.footer-logo {
+    padding: 0px 0px 20px 0px;
+}
+
+.footer-text p {
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--white-color);
+    font-weight: 200;
+}
+
+.footer-footer-text {
+    max-width: 300px;
+}
+
+
+/* footer section close */
+
+/* copy right section open */
+.copy-right {
+
+    background: linear-gradient(to top, #545341, #2b2b27);
+}
+
+.copy-right-child {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.copy-right-child a {
+    color: var(--white-color);
+    line-height: 1.1;
+    font-weight: 200;
+
+}
+
+/* copy right section close*/
+
+/* media query section */
+
+/* extra small device */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+
+    /* nav section open */
+
+
+    .icons {
+
+        display: block;
+
+    }
+
+    .header-section {
+
+        width: 100vw;
+        width: 100%;
+
+    }
+
+    .nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-grayish-yellow);
+        top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: .5s all ease-in-out;
+        left: -100%;
+
+
+    }
+
+    .nav ul.show {
+        left: -0px;
+    }
+
+    /* nav section close */
+
+    /* banner section open */
+
+    .heading-1 {
+        font-size: 35px;
+    }
+
+    /* banner section close */
+
+    /* about section open  */
+
+    .about-us-section-child {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .about-left-image {
+        width: 100%;
+    }
+
+
+    .right-text {
+        width: 100%;
+    }
+    .heading-2 {
+
+        font-size: 25px;
+
+    }
+
+    /* about section close */
+
+    /* our college campus drive open */
+
+    .heading-2 {
+
+        font-size: 25px;
+
+    }
+
+    .our-college {
+
+        width: 100%;
+        margin: 10PX 15px;
+
+    }
+
+    .heading-4 {
+        font-size: 19px;
+    }
+
+    /* our college campus drive close */
+
+
+    /* footer-section open */
+
+    .footer-section-child {
+
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .footer {
+
+        text-align: center;
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .footer-logo {
+
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    /* footer section end */
+
+}
+
+
+
+
+
+/* small device */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+    /* nav section open */
+
+
+    .icons {
+
+        display: block;
+
+    }
+
+    .header-section {
+
+        width: 100vw;
+        width: 100%;
+
+    }
+
+    .nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-grayish-yellow);
+        top: 50px;
+        flex-direction: column;
+        text-align: center;
+        transition: .5s all ease-in-out;
+        left: -100%;
+
+
+    }
+
+    .nav ul.show {
+        left: 0;
+    }
+
+
+    /* nav section close */
+    /* banner section open */
+
+    .heading-1 {
+        font-size: 45px;
+    }
+
+    /* banner section close */
+
+
+    /* about section open  */
+
+    .about-us-section-child {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .about-left-image {
+        width: 100%;
+    }
+
+
+    .right-text {
+        width: 100%;
+    }
+    .heading-2 {
+
+        font-size: 28px;
+
+    }
+    /* about section close  */
+
+    /* our college campus drive open */
+
+    .heading-2 {
+
+        font-size: 28px;
+
+    }
+
+    .our-college {
+
+        width: 100%;
+        margin: 10PX 15px;
+
+    }
+
+    .heading-4 {
+        font-size: 19px;
+    }
+
+    /* our college campus drive close */
+
+
+    /* footer-section open */
+
+
+    .footer-section-child {
+        padding: 40px 35px;
+    }
+
+
+    /* footer section close*/
+
+
+
+
+}
+
+
+
+
+
+/* medium device */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    /* nav section open */
+
+
+
+    .icons {
+
+        display: block;
+
+    }
+
+    .header-section {
+
+        width: 100vw;
+        width: 100%;
+
+    }
+
+    .nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-grayish-yellow);
+        flex-direction: column;
+        top: 50px;
+        text-align: center;
+        transition: .5s all ease-in-out;
+        left: -100%;
+
+
+    }
+
+    .nav ul.show {
+        left: 0;
+    }
+
+    
+    /* nav section close */
+
+    /* banner section open */
+
+
+    .heading-1 {
+        font-size: 45px;
+    }
+
+    /* banner section close */
+
+
+    /* about section open  */
+
+    .about-us-section-child {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .about-left-image {
+        width: 100%;
+    }
+
+
+    .right-text {
+        width: 100%;
+    }
+    .heading-2 {
+        font-size: 32px;
+    }
+
+    /* about section close  */
+
+
+    /* our college campus drive open  */
+
+    .campus-drive {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-college {
+
+        width:45%;
+        margin: 10px 10px;
+    }
+
+    .heading-2 {
+        font-size: 32px;
+    }
+
+    /* our college campus drive close */
+
+    /* footer-section open */
+
+    .footer-section-child {
+        justify-content: center;
+
+        padding: 40px 45px;
+
+    }
+
+    .footer {
+
+        margin: 0px 10px;
+    }
+
+
+    /* footer section close */
+
+
+
+
+}
+
+
+
+
+
+/* large device */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+
+    /* banner section open */
+    .heading-1 {
+        font-size: 50px;
+    }
+
+    /* banner section close */
+
+
+    /* about section open */
+
+
+
+    .right-text h2 {
+
+        font-size: 34px;
+
+    }
+
+    .abt-paragraph {
+
+        font-size: 15px;
+
+    }
+
+
+
+    /* about section close */
+
+
+    /* our college campus drive open */
+
+
+    .campus-drive {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our-college {
+
+        width: 47%;
+        margin: 10px 10px;
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    /* our college campus drive open */
+
+    /* footer section open */
+
+
+    .footer-section-child {
+
+        padding: 10px 10px;
+
+    }
+
+
+    /* footer section close */
+
+
+}
+
+
+
+/* extra large device */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+
+    /* banner section open */
+    .heading-1 {
+        font-size: 65px;
+    }
+
+    /* banner section close */
+
+    /* about section open */
+   
+
+
+
+    .right-text h2 {
+
+        font-size: 40px;
+
+    }
+
+    .abt-paragraph {
+
+        font-size: 15px;
+
+    }
+
+
+    /* about section close */
+
+
+    /* our college campus drive open  */
+
+   
+
+   .college-campus-section-child{
+    padding: 0px 10px;
+   }
+
+    .heading-2 {
+        font-size: 45px;
+    }
+
+    /* our college campus drive open */
+
+
+
+
+    /* footer section open */
+    .footer-section-child {
+
+        padding: 20px 20px;
+
+    }
+
+    /* footer section close */
+
+
+}

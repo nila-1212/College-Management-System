@@ -1,0 +1,3506 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Agdasima:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Mincho&display=swap');
+
+/* universal section open */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    width: 100%
+}
+
+body {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* universal section close*/
+
+/* common class open */
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.com-gap {
+
+    padding: 100px 0px;
+
+}
+
+.cmn-btn {
+    font-size: 16px;
+    padding:10px 32px;
+    border-radius: 50px;
+    border: 3px solid var(--banner-text-color);
+    display: inline-block;
+    font-weight: 450;
+    text-transform: capitalize;
+    /* background-color: var(--primary-color); */
+    color: var(--primary-color);
+    text-decoration: none;
+    background: linear-gradient(to right, transparent 50%, #518170 50%);
+    background-size: 200%;
+    background-position: 0%;
+
+
+
+}
+
+
+.cmn-btn:hover {
+    /* background-color: var(--secondary-color); */
+    border: 3px solid var(--goldenrod);
+    color: var(--white-color);
+    transition: 2s ease;
+    background-position: 100%;
+
+
+
+
+}
+
+:root {
+
+    --primary-color: #000;
+    --secondary-color: #9c702f;
+    --action: #216296;
+    --banner-text-color: #35736E;
+    --gray: #515253;
+    --white-color: #fff;
+    --light-grayish-yellow: #dddbb6;
+    --logo-section-box-color: #f1f9f8;
+    --teacher-section-text-color: #99999a;
+    --burnt-sienna-color: #eb7412;
+    --goldenrod: #DAA520;
+}
+
+h1,
+.heading-1 {
+
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--banner-text-color);
+    margin: 0 0 20px;
+}
+
+h2,
+.heading-2 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+
+}
+
+h3,
+.heading-3 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+h4,
+.heading-4 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+h5,
+.heading-5 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+/* common class close*/
+
+/* nav section open */
+
+
+.header-section {
+
+    position: absolute;
+    width: 100%;
+    padding: 15px 0px;
+
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+.nav-logo {
+
+    width: 160px;
+    display: block;
+
+
+}
+
+.nav-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-list li {
+    margin: 0px 20px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.nav-list li a {
+
+    text-transform: capitalize;
+    padding: 9px 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--navbar-color);
+    position: relative;
+
+}
+
+.nav-list li a::before {
+
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--burnt-sienna-color);
+    bottom: 0px;
+    position: absolute;
+    transition: 1s all ease;
+}
+
+.nav-list li a:hover::before {
+
+    width: 100%;
+    /* color:var(--burnt-sienna-color); */
+
+}
+
+#action {
+    color: var(--action);
+}
+
+#action:hover {
+    color: var(--burnt-sienna-color);
+}
+
+.nav-list li a:hover {
+    color: var(--burnt-sienna-color);
+}
+
+
+.icons {
+
+    font-size: 20px;
+    color: var(--primary-color);
+
+}
+
+
+.icons {
+
+    display: none;
+    font-size: 20px;
+    color: var(--secondary-color);
+
+}
+
+.nav ul.show {
+
+    left: 100%;
+
+}
+
+/* nav section end */
+
+/* banner section open */
+
+.banner-section {
+    background: linear-gradient(to right, rgba(151, 140, 79, 0.6), rgba(218, 247, 238, .1)), url('../photos/model\ 8.jpg')fixed;
+
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.banner-section-child {
+    width: 60%;
+}
+
+.banner-section-child p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: var(--gray);
+    line-height: 1.2;
+}
+
+#active {
+    color: var(--secondary-color);
+
+}
+
+
+
+/* banner section close */
+
+/* about us section open */
+.about-us-section {
+
+    background: linear-gradient(to right, #FFF5BE, #a5eed6);
+
+}
+
+.about-us-section-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 -15px;
+
+}
+
+.left-text,
+.right-image {
+
+    width: 50%;
+    padding: 0 15px;
+}
+
+
+.about-us-section-child p {
+    margin: 30px 0px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: var(--gray);
+}
+
+#abt-heading-style {
+    color: var(--secondary-color);
+}
+
+.left-text span {
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+/* .right-image img:hover {
+    transform: scale(1.1);
+    transition: 1.2s all ease-out;
+
+} */
+
+
+
+/* about section close */
+
+/* academics card section open */
+
+.academis-section {
+    background-color: var(--light-grayish-yellow);
+}
+
+.academis-section-child {
+    text-align: center;
+    margin: 0 -15px;
+
+
+}
+
+.main-card {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 0px 0px 0px;
+
+}
+
+.academics-card {
+
+    box-shadow: 2px 2px 12px 2px var(--secondary-color);
+    width: 24%;
+    background-color: var(--logo-section-box-color);
+
+
+}
+
+
+.academics-card:hover {
+
+
+    box-shadow: 3px 3px 12px 3px var(--gray);
+    background: linear-gradient(to top, #c8d66b, #a838aa);
+
+}
+
+.academics-text-card {
+    text-align: left;
+    padding: 10px 20px 30px 15px;
+}
+
+.academics-text-card p {
+    margin: 15px 0px 0px 0px;
+    color: var(--gray);
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+#academics-heading-style {
+    color: var(--secondary-color);
+}
+
+
+/* academics card section close */
+
+/*  our mangment system open */
+.managment-section {
+
+    background: linear-gradient(to right, #FFF5BE, #D0F7EA);
+}
+
+.managment-section-child {
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.our-managment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.managment-left-text,
+.right-managment {
+    width: 50%;
+    padding: 0 15px;
+}
+
+#managment-heading-style {
+    color: var(--secondary-color);
+}
+
+.managment-left-text p {
+    color: var(--gray);
+    line-height: 1.2;
+    width: 600;
+}
+
+/* .right-managment img:hover {
+    transform: scale(1.1);
+    transition: 1.2s all ease-out;
+
+} */
+
+
+
+/* our mangment system close */
+
+
+/* education logo section open  */
+.education-logo-section {
+
+    background: linear-gradient(to right, #FFF5BE, #a5eed6);
+    border: 3px solid var(--white-color);
+
+}
+
+.education-logo-section-child {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+}
+
+.font {
+    border: 3px solid var(--white-color);
+    border-radius: 50%;
+    padding: 35px 57px;
+    background: linear-gradient(to top, #cca8bd, #32646e);
+
+}
+
+.font:hover {
+    transform: scale(1.1);
+    transition: .2s all ease-in-out;
+
+}
+
+.font i {
+    font-size: 50px;
+    padding-bottom: 5px;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.font p {
+    margin-top: 5px;
+    color: var(--gray);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+
+.counter {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--logo-section-box-color);
+}
+
+
+/* education logo section close */
+
+/* our popular course section open */
+.popular-course-section {
+    background-color: var(--light-grayish-yellow);
+}
+
+.popular-course-section-child {
+
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.main-popular-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+
+
+}
+
+.popular-card-one {
+    box-shadow: 3px 3px 13px 3px var(--secondary-color);
+    width: 32%;
+    background-color: var(--logo-section-box-color);
+
+    /* border-bottom-right-radius: 20%; */
+    /* justify-content: space-between; */
+}
+
+.popular-card-one:hover {
+
+    box-shadow: 3px 3px 12px 3px var(--gray);
+    background: linear-gradient(to top, #b3c05f, #aa7538);
+
+}
+
+.popular-card-one img {
+    border-radius: 10px;
+}
+
+
+.click-here {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-style-one {
+    display: flex;
+    align-items: center;
+}
+
+.card-style {
+    text-align: left;
+}
+
+.popular-card-one {
+    padding: 10px 10px 40px 10px;
+}
+
+.left-click-here span {
+    text-transform: capitalize;
+    color: var(--gray);
+    padding: 0px 0px 10px 0px;
+}
+
+.right-click-here a i {
+    color: var(--burnt-sienna-color)
+}
+
+.card-style strong {
+    padding: 9px 0px 0px 0px;
+    color: var(--secondary-color);
+}
+
+.cmn-card-style p {
+    margin: 12px 0px 0px 0px;
+    color: var(--gray);
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+.cmn-card-style a i {
+    color: var(--burnt-sienna-color);
+}
+
+#popular-heading-style {
+    color: var(--secondary-color);
+}
+
+
+
+
+/* our popular course section close */
+
+/* our experience teachers section open */
+.teachers-section {
+    background: linear-gradient(to right, #FFF5BE, #D0F7EA);
+}
+
+.teachers-section-child {
+
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.main-teachers-card {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.experience-teacher {
+
+    width: 32%;
+    padding: 15px 12px;
+    box-shadow: 3px 3px 12px 3px var(--secondary-color);
+    background-color: var(--logo-section-box-color);
+
+}
+
+
+.experience-teacher:hover {
+
+    box-shadow: 3px 3px 13px 3px var(--gray);
+    background: linear-gradient(to bottom, #5a95a2, #d9a971);
+
+}
+
+.experience-teacher p {
+    color: var(--gray);
+    line-height: 1.2;
+    font-weight: 200;
+    margin: 10px 0px;
+}
+
+.experience-teacher span {
+    color: var(--gray);
+
+}
+
+.experience-teacher strong {
+
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.experience-teacher img {
+    border-radius: 10px;
+}
+
+#teacher-heading-style {
+    color: var(--secondary-color);
+}
+
+
+/* our experience teachers section close */
+
+/* Premium Learning Experience section open */
+.premium-learning-section {
+
+    background: linear-gradient(to right, #FFF5BE, #98b1a8);
+
+}
+
+.premium-learning-section-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    justify-content: space-between;
+}
+
+
+.left-premium-image,
+.learning-experience-main-text {
+
+    width: 50%;
+    padding: 0 15px;
+}
+
+.right-premium-main {
+    display: flex;
+    align-items: center;
+}
+
+.premium-learning-right {
+    padding: 30px;
+}
+
+.premium-learning-left {
+
+    border-radius: 10px;
+    padding: 25px;
+    background-color: var(--burnt-sienna-color);
+}
+
+.premium-learning-left a i {
+    color: var(--white-color);
+    font-size: 30px;
+
+}
+
+.premium-learning-right p {
+    color: var(--gray);
+
+}
+
+#premium-heading-style {
+    color: var(--secondary-color);
+}
+
+
+/* Premium Learning Experience section close */
+
+/* our recently blog section open */
+
+.recent-blog-section {
+    background: linear-gradient(120deg, #546c65 50%, #bdc981 50%);
+
+}
+
+.recent-blog-section-child {
+    text-align: center;
+    margin: 0 -15px;
+
+}
+
+.blog-card-main {
+
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+
+}
+
+.blog-card {
+
+    height: 300px;
+    width: 380px;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+
+.blog-card:hover {
+
+    cursor: pointer;
+    transform: rotatey(202deg);
+
+}
+
+.front,
+.back {
+
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0 0 15px 0 gray; */
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.front {
+
+    background-image: url('../photos/activity\ 33.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+
+.back {
+
+
+    background: linear-gradient(to right, #FFF5BE, #a5eed6);
+    transform: rotateY(180deg);
+    padding: 90px 30px;
+
+}
+
+.one {
+
+    background-image: url('../photos/activity\ 2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+
+}
+
+.two {
+
+    background-image: url('../photos/activity\ 1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+
+}
+
+.back p {
+    margin: 0px 0px 5px 0px;
+    color: var(--gray);
+}
+
+
+#blog-heading-style {
+    color: var(--secondary-color);
+}
+
+
+/* our recently blog section close */
+
+/* student review section open */
+.student-review-section {
+
+    background: linear-gradient(to right, #FFF5BE, #a5eed6);
+    border: 3px solid var(--white-color);
+
+
+}
+
+.student-review-section-child {
+    text-align: center;
+    margin: 0 -15px;
+
+}
+
+
+.student-review-section-child p {
+    color: var(--gray);
+    line-height: 1.1;
+    font-weight: 600;
+
+}
+
+.student-review-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    flex-wrap: wrap;
+
+}
+
+.student-thought {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.student-image-text img {
+
+    border-radius: 50%;
+}
+
+.student-image-text {
+    max-width: 50px;
+
+}
+
+
+.review-text-card {
+    box-shadow: 3px 3px 13px 3px var(--goldenrod);
+    width:23%;
+    padding: 35px 25px;
+    background-color: var(--logo-section-box-color);
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+
+}
+
+.review-text-card:hover {
+    box-shadow: 3px 3px 13px 3px var(--gray);
+    background: linear-gradient(to top, #cca8bd, #32646e);
+    transform: scale(1.1);
+    transition: .1s all ease-in-out;
+
+}
+
+.review-text-card p {
+    text-align: left;
+    color: var(--gray);
+    line-height: 1.2;
+    font-weight: 400;
+
+}
+
+.abt-student-review-text {
+    padding: 0px 25px
+}
+
+.abt-student-review-text p {
+    color: var(--gray);
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+#review-heading-style {
+    color: var(--secondary-color);
+}
+
+/* student review section close */
+/* online learning video section open */
+.online-learning-video-section {
+    background: linear-gradient(120deg, #546c65 50%, #bdc981 50%);
+}
+
+.online-learning-video-section-child {
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.slick-items {
+
+    max-width: 400px;
+}
+
+.video-learning {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0px 0px 0px;
+
+}
+
+#learning-heading-style {
+    color: var(--secondary-color);
+}
+
+.slider-video iframe {
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: 3px solid var(--goldenrod);
+}
+
+.slick-prev:before,
+.slick-next:before {
+
+    color: var(--primary-color);
+
+}
+
+/* online learning video section close */
+
+/* our student gallery section open */
+.gallery-section {
+
+    background: linear-gradient(to right, #FFF5BE, #98b1a8);
+
+}
+
+
+.gallery-section-child {
+    text-align: center;
+    margin: 0px -15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+}
+
+
+.item1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item2 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.item3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.item4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item6 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+#gallery-heading-style{
+    color: var(--secondary-color);
+}
+
+
+
+
+/* our student gallery section close */
+
+/* subscribe section open */
+.subscribe-section {
+
+    background: linear-gradient(to right, rgba(235, 215, 101, 0.5), rgb(206, 234, 226)), url('/photos/2d-teacher-day-flat-illustration-background_215372-6519.jpg');
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.subscribe-section-child {
+
+    text-align: center;
+    justify-content: center;
+    margin: 0px -15px;
+
+}
+
+.subscribe-section-child p {
+    font-size: 18px;
+    margin: 20px 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+input[type=search] {
+
+    padding: 12px 420px 12px 9px;
+    border-radius: 30px;
+
+}
+
+.subscribe-section-child a {
+    transform: translate(-135px, -3px);
+    position: absolute;
+
+}
+
+#subscribe-style-heading {
+    color: var(--secondary-color);
+}
+
+/* subscribe section close */
+
+/* contact-us-section-open  */
+.contact-us-section {
+
+    background: linear-gradient(to right, #FFF5BE, #D0F7EA);
+
+}
+
+.contact-us-section-child {
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px -15px;
+
+
+
+}
+
+
+.contact-left,
+.contact-us {
+
+    width: 50%;
+    padding: 0px 15px;
+
+}
+
+
+
+input {
+
+    padding: 10px 300px 9px 9px;
+
+
+
+}
+
+#submit-button {
+    
+    /* padding: 10px 400px 9px 9px;
+    */
+   
+
+}
+
+.contact-us {
+
+    padding: 38px 0px 20px 0px;
+    border: 4px solid var(--white-color);
+    margin: 0px 0px 0px 20px;
+    background-color: #DAA520;
+
+
+}
+
+.textarea {
+    color: var(--gray);
+    font-weight: 100;
+
+
+}
+
+.contact-left {
+    border: 3px solid var(--burnt-sienna-color);
+}
+
+
+
+
+
+
+/* contact-us-section-close */
+
+/* company logo section open  */
+
+.comapny-logo-section {
+
+    background: linear-gradient(to right, rgba(151, 140, 79, 0.5), rgba(218, 247, 238, .2)), url('../photos/education\ logo\ photo.png');
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.comapny-logo-section-child {
+    margin: 0 -15px;
+    text-align: center;
+
+}
+
+
+.company-logo {
+
+    align-items: center;
+
+
+}
+
+.company-logo img {
+    margin: 0px 10px;
+}
+
+#company-logo-heading-style {
+    color: var(--secondary-color);
+}
+
+/* company logo section close */
+
+/* footer section open */
+
+.footer-section {
+    background: linear-gradient(to top, #545341, #2b2b27);
+}
+
+.footer-section-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+    padding: 30px 0px 0px 0px;
+
+}
+
+.footer-logo {
+    display: block;
+    width: 160px;
+}
+
+.footer {
+    max-width: 260px;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+.footer-list li a {
+
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white-color);
+    position: relative;
+
+}
+
+
+.footer-list li a::before {
+
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--burnt-sienna-color);
+    bottom: 0px;
+    position: absolute;
+    transition: 1s all ease;
+}
+
+
+.footer-list li a:hover::before {
+
+    width: 100%;
+
+}
+
+.footer-list li {
+    padding: 0px 0px 15px 0px;
+}
+
+.footer-list li a:hover {
+    color: var(--burnt-sienna-color);
+}
+
+
+.footer p {
+    margin: 0px 0px 20px 0px;
+    line-height: 1.1;
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.footer-logo {
+    padding: 0px 0px 20px 0px;
+}
+
+.footer-text p {
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--white-color);
+    font-weight: 200;
+}
+
+.footer-footer-text {
+    max-width: 300px;
+}
+
+/* footer section close */
+
+/* copy right section open */
+.copy-right {
+    background: linear-gradient(to top, #545341, #2b2b27);
+}
+
+.copy-right-child {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.copy-right-child a {
+    color: var(--white-color);
+    line-height: 1.1;
+    font-weight: 200;
+
+}
+
+/* copy right section end */
+
+
+
+
+/* responcive start */
+
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    /* navbar-section open */
+
+
+    .icons {
+
+        display: block;
+
+    }
+
+    .header-section {
+
+        width: 100vw;
+        width: 100%;
+
+    }
+
+    .nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-grayish-yellow);
+        top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: .5s all ease-in-out;
+        left: -100%;
+
+
+    }
+
+    .nav ul.show {
+        left: 0;
+    }
+
+
+
+
+    /* navbar-section close */
+
+    /* banner section open */
+
+    .banner-section {
+
+        background-size: 100% 100%;
+        background-position: center center;
+
+    }
+
+    .banner-section-child {
+
+        width: 60%;
+
+    }
+
+    .banner-section-child h1 {
+
+        font-size: 26px;
+
+    }
+
+    .banner-section-child p {
+
+        font-size: 12px;
+
+    }
+
+    .cmn-btn {
+
+        font-size: 10px;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+
+    }
+
+    /* banner section close */
+
+
+
+    /* about us section */
+
+    .left-text {
+
+        width: 100%;
+
+    }
+
+    .heading-2 {
+
+        font-size: 23px;
+    }
+
+    .left-text p {
+
+
+        font-size: 14px;
+        text-align: justify;
+
+    }
+
+    .right-image {
+
+        width: 100%;
+    }
+
+    .about-us-section-child {
+        text-align: center;
+    }
+
+    .cmn-btn {
+
+        font-size: 10px;
+        padding: 10xp 10px;
+
+    }
+
+    /* about us section */
+
+    /* academics card section open */
+
+    .academics-card {
+        width: 100%;
+        margin: 20px 0px;
+
+    }
+
+    .main-card {
+
+        margin: 0px 20px;
+
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    .heading-3 {
+        font-size: 18px;
+    }
+
+    .academics-text-card p {
+        font-size: 14px;
+    }
+
+    /* academics card section open */
+
+    /* our mangment system open */
+
+    .managment-left-text {
+
+        width: 100%;
+
+    }
+
+    .right-managment {
+
+        width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    .managment-left-text p {
+        font-size: 14px;
+        padding: 0px 0px 15px 0px;
+    }
+
+    /* education logo section close */
+
+    .education-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .font {
+
+        margin: 20px 0px;
+
+    }
+
+    /* education logo section close */
+
+    .main-popular-card {
+
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .popular-card-one {
+
+        margin: 10px 10px;
+        width: 100%;
+
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    /* our popular course section close */
+
+    /* our experience teachers section open */
+
+
+    .experience-teacher {
+
+        margin: 10px 10px;
+        width: 100%;
+
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    /* our experience teachers section open */
+
+    /* Premium Learning Experience section open */
+
+
+    .learning-experience-main-text {
+
+        width: 100%;
+
+    }
+
+    .learning-experience-main-text {
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .left-premium-image {
+
+        width: 100%;
+
+
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+
+    .premium-learning-right {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .premium-learning-right p {
+        font-size: 14px;
+    }
+
+    .heading-3 {
+        font-size: 18px;
+    }
+
+
+    /* Premium Learning Experience section close */
+
+
+    /* our recently blog section open */
+
+    .blog-card {
+        margin: 10px 20px;
+    }
+
+
+    /* our recently blog section close */
+
+
+    /* student review section open */
+
+
+
+    .review-text-card {
+
+        margin: 20px 40px 0px 40px;
+        width: 100%;
+
+
+    }
+
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    .student-review-section-child p {
+        font-size: 14px;
+    }
+
+    .student-review-section-child {
+        text-align: center;
+    }
+
+    .review-text-card p {
+        font-size: 14px;
+    }
+
+    /* .student-review-main {
+        width: 90%;
+    } */
+
+    /* student review section close  */
+
+    /* online learning video section open */
+
+
+    .slick-items iframe {
+
+
+        width: 100%;
+
+    }
+
+    .slider-video {
+        margin: 0px 10px;
+        max-width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+
+
+    .video-learning {
+
+        width: 80%;
+
+        margin: 0px 30px;
+    }
+
+
+
+    /* online learning video section close */
+
+    /* our student gallery section open */
+
+    .gallery-section-child {
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .gallery-one {
+
+        margin: 10px 20px;
+
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .item3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+    /* our student gallery section close */
+
+    /* subscribe section open */
+
+    .subscribe-section-child input {
+
+        padding: 10px 110px 9px 10px;
+
+    }
+
+    .subscribe-section-child a {
+
+
+        transform: translate(-67px, -1px);
+
+
+
+    }
+
+    .heading-2 {
+        font-size: 23px;
+    }
+
+    .subscribe-section-child p {
+        font-size: 15px;
+    }
+
+    /* subscribe section close */
+
+    /* contact section open */
+
+
+    .contact-us-section-child {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .contact-left {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .contact-left iframe {
+
+        width: 100%;
+    }
+
+    .contact-us {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input {
+
+        padding: 10px 65px 9px 9px;
+
+
+    }
+
+    textarea {
+
+        width: 82%;
+
+    }
+
+
+
+
+    /* contact section close */
+
+    /* .company logo section open */
+
+    .company-logo img {
+
+        padding: 0px 80px;
+
+    }
+
+
+    .company-logo {
+
+        max-width: 250px;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .comapny-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+
+    /* company logo section close */
+
+    /* footer-section open */
+
+    .footer-section-child {
+
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .footer {
+
+        text-align: center;
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .footer-logo {
+
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* footer-section close */
+
+}
+
+
+
+
+
+
+
+/* small device */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* navbar-section open */
+    .icons {
+
+        display: block;
+
+    }
+
+    .header-section {
+
+        width: 100vw;
+        width: 100%;
+
+    }
+
+    .nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-grayish-yellow);
+        top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: .5s all ease-in-out;
+        left: -100%;
+
+
+    }
+
+    .nav ul.show {
+        left: 0;
+    }
+
+    /* navbar-section close */
+
+    /* banner section open */
+
+    .banner-section {
+
+
+        background-size: 100% 100%;
+        background-position: center center;
+
+
+    }
+
+    .banner-section-child {
+
+        width: 60%;
+
+    }
+
+    .banner-section-child h1 {
+
+        font-size: 34px;
+
+    }
+
+    .banner-section-child p {
+        font-size: 16px;
+    }
+
+
+    .cmn-btn {
+
+        font-size: 15px;
+        padding: 12px 18px;
+        margin-bottom: 10px;
+
+
+    }
+
+    /* banner section close */
+
+
+
+    /* about us section open */
+
+    .left-text {
+
+        width: 100%;
+
+    }
+
+    .heading-2 {
+
+        font-size: 29px;
+    }
+
+    .left-text p {
+
+
+        font-size: 18px;
+        text-align: justify;
+        padding: 30px 20px;
+
+    }
+
+    .right-image {
+
+        width: 100%;
+    }
+
+    .about-us-section-child {
+        text-align: center;
+    }
+
+    .cmn-btn {
+
+        font-size: 15px;
+        padding: 12xp 18px;
+
+
+    }
+
+
+
+    /* about us section close*/
+
+    /* academics card section open */
+
+    .academics-card {
+        width: 100%;
+        margin: 20px 0px;
+
+    }
+
+    .main-card {
+
+        margin: 0px 20px;
+
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+    .heading-3 {
+        font-size: 20px;
+    }
+
+    .academics-text-card p {
+        font-size: 16px;
+    }
+
+    /* academics card section close */
+
+    /* our mangment system open */
+
+    .managment-left-text {
+
+        width: 100%;
+
+    }
+
+    .right-managment {
+
+        width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+    .managment-left-text p {
+        font-size: 16px;
+        padding: 0px 0px 15px 0px;
+    }
+
+    /* education logo section close */
+
+    .education-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .font {
+
+        margin: 20px 20px;
+
+    }
+
+    /* our mangment system close*/
+
+    /* education logo section open*/
+
+    .main-popular-card {
+
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .popular-card-one {
+
+        margin: 20px 20px;
+        width: 100%;
+
+    }
+
+    .heading-2 {
+        font-size: 30px;
+    }
+
+    /* our popular course section close */
+
+    /* our experience teachers section open */
+
+
+    .experience-teacher {
+
+        margin: 20px 20px;
+        width: 100%;
+
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+    /* our experience teachers section close*/
+
+    /* Premium Learning Experience section open */
+
+
+    .premium-learning-section-child {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learning-experience-main-text {
+
+        width: 100%;
+
+    }
+
+    .learning-experience-main-text {
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .left-premium-image {
+
+        width: 100%;
+
+
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+
+    .premium-learning-right {
+        padding: 20px 20px;
+    }
+
+    .premium-learning-right p {
+        font-size: 16px;
+    }
+
+    .heading-3 {
+        font-size: 20px;
+    }
+
+
+    /* Premium Learning Experience section close */
+
+
+    /* our recently blog section open */
+
+    .blog-card-main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog-card {
+        margin: 10px 20px;
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+
+    /* our recently blog section close */
+    /* student review section open  */
+
+    .review-text-card {
+
+        margin: 20px 40px 0px 40px;
+        width: 100%;
+
+
+    }
+
+
+    .student-review-section-child {
+        text-align: center;
+    }
+
+    .review-text-card p {
+        font-size: 14px;
+    }
+
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+    .student-review-section-child p {
+        font-size: 16px;
+    }
+
+    /* student review section close */
+
+    /* online learning video section open */
+
+    .video-learning {
+
+        width: 90%;
+
+        margin: 0px 30px;
+    }
+
+
+
+    .slick-items iframe {
+
+        /* margin: 124%; */
+        width: 100%;
+    }
+
+    .slider-video {
+        margin: 0px 20px;
+        max-width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+
+    /* online learning video section close */
+
+    /* our student gallery section open */
+
+    .gallery-section-child {
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    .heading-2 {
+        font-size: 29px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .item3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+
+
+    /* our student gallery section open */
+
+    /* subscribe section open */
+
+    .subscribe-section-child input {
+
+        padding: 15px 150px 12px 10px;
+
+    }
+
+    .subscribe-section-child a {
+
+        transform: translate(-104px, -3px);
+
+
+
+    }
+
+    .heading-2 {
+        font-size: 29px;
+    }
+
+    .subscribe-section-child p {
+        font-size: 16px;
+    }
+
+    /* subscribe section close */
+
+    /* contact us section open*/
+
+    .contact-us-section-child {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .contact-left {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .contact-left iframe {
+
+        width: 100%;
+    }
+
+    .contact-us {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input {
+
+        padding: 10px 280px 9px 9px;
+
+
+    }
+
+    #textareaa {
+
+        max-width: 80%;
+
+    }
+
+    /* contact us section close */
+
+    /* .company logo section open */
+
+
+    .company-logo {
+
+        max-width: 70%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .comapny-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+
+    /* company logo section close */
+
+    /* footer-section open */
+
+
+    .footer-section-child {
+        padding: 40px 35px;
+    }
+
+    /* footer-section close */
+
+}
+
+/* medium device */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    /* navbar-section open */
+
+
+
+    .icons {
+
+        display: block;
+
+    }
+
+    .header-section {
+
+        width: 100vw;
+        width: 100%;
+
+    }
+
+    .nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-grayish-yellow);
+        flex-direction: column;
+        top: 50px;
+        text-align: center;
+        transition: .5s all ease-in-out;
+        left: -100%;
+
+
+    }
+
+    .nav ul.show {
+        left: 0;
+    }
+
+
+    /* navbar-section close */
+
+    /* banner section open */
+    .banner-section {
+
+
+        background-size: 100% 100%;
+        background-position: center center;
+
+
+    }
+
+    .banner-section-child {
+
+        width: 60%;
+
+    }
+
+    .banner-section-child h1 {
+
+        font-size: 40px;
+
+    }
+
+    .banner-section-child p {
+        font-size: 20px;
+    }
+
+
+
+
+    .cmn-btn {
+
+        font-size: 17px;
+        padding: 12xp 18px;
+        margin: 10px;
+
+
+
+    }
+
+    /* banner section close */
+
+
+
+    /* about us section open*/
+
+    .left-text {
+
+        width: 100%;
+
+    }
+
+    .heading-2 {
+
+        font-size: 34px;
+    }
+
+    .left-text p {
+
+        font-size: 20px;
+        padding: 10px 20px 30px 20px;
+        text-align: justify;
+
+    }
+
+    .right-image {
+
+        width: 100%;
+    }
+
+    .about-us-section-child {
+        text-align: center;
+    }
+
+    .cmn-btn {
+
+        font-size: 17px;
+        padding: 12xp 18px;
+
+
+    }
+
+
+
+    /* about us section close*/
+
+    /* academics card section open */
+
+    .main-card {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .academics-card {
+
+        width:32%;
+        margin: 10px 5px;
+
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    .heading-3 {
+        font-size: 24px;
+    }
+
+    .academics-text-card p {
+        font-size: 18px;
+    }
+
+    /* academics card section close */
+
+    /* our mangment system open */
+
+    .managment-left-text {
+
+        width: 100%;
+
+    }
+
+    .right-managment {
+
+        width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    .managment-left-text p {
+        font-size: 20px;
+        padding: 0px 0px 15px 0px;
+    }
+
+    /* our mangment system close */
+
+    /* education logo section open */
+
+    .education-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .font {
+
+        margin: 20px 20px;
+
+    }
+
+    /* education logo section close */
+
+    /* our popular course section open */
+
+    .main-popular-card {
+
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .popular-card-one {
+
+       width: 45%;
+        margin: 10px 10px;
+
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    /* our popular course section close */
+
+    /* our experience teachers section open */
+    .main-teachers-card {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .experience-teacher {
+
+        width: 45%;
+        margin: 10px 15px;
+
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+
+
+    /* our experience teachers section close */
+
+    /* Premium Learning Experience section open */
+
+
+    .premium-learning-section-child {
+
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learning-experience-main-text {
+
+        width: 100%;
+
+    }
+
+    .learning-experience-main-text {
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .left-premium-image {
+
+        width: 100%;
+
+
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+
+    .premium-learning-right {
+        padding: 20px 20px;
+    }
+
+    .premium-learning-right p {
+        font-size: 20px;
+    }
+
+    .heading-3 {
+        font-size: 20px;
+    }
+
+    .right-premium-main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Premium Learning Experience section close */
+
+
+    /* our recently blog section open */
+
+
+    .blog-card-main {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    .blog-card {
+        max-width: 330px;
+        margin: 10px 20px;
+    }
+
+
+
+    /* our recently blog section close */
+
+    /* student review section open */
+
+    .review-text-card p {
+        font-size: 18px;
+    }
+
+    .student-review-main{
+    
+        justify-content: center;
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    .student-review-section-child p {
+        font-size: 20px;
+    }
+
+
+    .review-text-card {
+        width: 30%;
+        margin: 10px 10px;
+    }
+
+    /* student review section close  */
+
+    /* online learning video section open */
+
+    .video-learning {
+
+        width: 90%;
+
+        margin: 0px 30px;
+    }
+
+
+
+    .slick-items iframe {
+
+        /* margin: 124%; */
+        width: 100%;
+    }
+
+    .slider-video {
+        margin: 0px 10px;
+        max-width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+
+    /* online learning video section close */
+
+    /* our student gallery section open */
+
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+
+    /* our student gallery section close*/
+
+    /* subscribe section open */
+
+    .subscribe-section-child input {
+
+        padding: 20px 300px 9px 20px;
+
+    }
+
+    .subscribe-section-child a {
+
+
+        transform: translate(-153px, -10px);
+
+    }
+
+    .heading-2 {
+        font-size: 34px;
+    }
+
+    .subscribe-section-child p {
+        font-size: 20px;
+    }
+
+    /* subscribe section close */
+
+    /* contact section open */
+
+    .contact-us-section-child {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .contact-left {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .contact-left iframe {
+
+        width: 100%;
+    }
+
+    .contact-us {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input {
+
+        padding: 10px 420px 9px 9px;
+
+
+    }
+
+    textarea{
+
+        width: 80%;
+
+    }
+
+    /* contact section close */
+
+    /* company logo section open */
+
+
+    .company-logo {
+
+        max-width: 80%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .comapny-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+
+    /* company logo section close */
+
+    /* footer-section open */
+
+
+    .footer-section-child {
+        justify-content: center;
+
+        padding: 40px 45px;
+
+    }
+
+    .footer {
+
+        margin: 0px 10px;
+    }
+
+}
+
+
+/* footer-section close */
+
+
+
+
+
+/* large device */
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* banner-section-open */
+
+
+
+    .banner-section {
+
+
+        background-size: 100% 100%;
+        background-position: center center;
+
+
+    }
+
+    .banner-section-child {
+
+        width: 60%;
+
+    }
+
+    .banner-section-child h1 {
+
+        font-size: 50px;
+
+    }
+
+    .banner-section-child P {
+        font-size: 21px;
+    }
+
+    .cmn-btn {
+
+        font-size: 18px;
+        padding: 14xp 20px;
+
+
+
+
+    }
+
+    /* banner-section-close*/
+
+    /* about section open */
+
+
+
+    .heading-2 {
+
+        font-size: 36px;
+    }
+
+    .cmn-btn {
+
+        font-size: 18px;
+        padding: 14xp 20px;
+
+
+
+    }
+
+    /* about section close */
+
+    /* academics card section open */
+
+
+
+    .main-card {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .academics-card {
+
+        width: 30%;
+        margin: 10px 10px;
+
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+    .heading-3 {
+        font-size: 24px;
+    }
+
+    .academics-text-card p {
+        font-size: 21px;
+    }
+
+
+    /* academics card section close */
+
+    /* our mangment system open */
+
+    .heading-2 {
+        font-size: 35px;
+    }
+
+    /* our mangment system close */
+
+    /* education logo section open */
+    .education-logo-section-child {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .font {
+
+        margin: 10px 20px;
+
+    }
+
+    /* education logo section close  */
+
+    /* our popular course section open */
+
+    .main-popular-card {
+
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .popular-card-one {
+
+        width: 45%;
+        margin: 10px 20px;
+
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+
+    /* our popular course section close */
+
+
+    /* our experience teachers section open */
+
+
+
+
+    .main-teachers-card {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .experience-teacher {
+
+        width: 45%;
+        margin: 10px 20px;
+
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+
+    /* our experience teachers section close */
+
+    /* Premium Learning Experience section open */
+
+
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+
+    .premium-learning-right {
+        padding: 20px 20px;
+    }
+
+    .premium-learning-right p {
+        font-size: 21px;
+    }
+
+    .heading-3 {
+        font-size: 20px;
+    }
+
+    .right-premium-main {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Premium Learning Experience section close */
+
+    /* our recently blog section open  */
+
+
+    .blog-card-main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog-card {
+        max-width: 400px;
+        margin: 10px 40px;
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+
+    /* our recently blog section close */
+
+    /* student review section open */
+
+
+    .student-review-main {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+    .student-review-section-child p {
+        font-size: 16px;
+    }
+
+    .review-text-card {
+        width: 30%;
+        margin: 10px 10px;
+    }
+
+
+
+    /* student review section close */
+    /* online learning video section open*/
+
+    .video-learning {
+
+        width: 94%;
+
+        margin: 0px 30px;
+    }
+
+
+
+    .slick-items iframe {
+
+        /* margin: 124%; */
+        width: 100%;
+    }
+
+    .slider-video {
+        margin: 0px 10px;
+        max-width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+
+    /* online learning video section close*/
+
+    /* our student gallery section open */
+
+
+    .main-gallery {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item3 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+
+  
+
+
+    /* our student gallery section close */
+
+    /* subscribe section open */
+
+
+    .subscribe-section-child a {
+        transform: translate(-146px, -4px);
+
+
+
+    }
+
+    .heading-2 {
+        font-size: 36px;
+    }
+
+    .subscribe-section-child p {
+        font-size: 20px;
+    }
+
+    /* subscribe section close */
+
+    /* contact section open */
+
+    .contact-us-section-child {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .contact-left,
+    .contact-us {
+
+        width: 50%;
+
+    }
+
+    input {
+
+        padding: 10px 275px 9px 9px;
+
+
+    }
+
+    textarea {
+
+        max-width: 98%;
+
+    }
+
+    .contact-left iframe {
+        width: 100%;
+    }
+
+
+
+
+    /* contact section close */
+
+    /* company logo section open */
+
+
+
+    .company-logo {
+
+        max-width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .comapny-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+    /* company logo section close */
+
+
+
+    /* footer section open */
+
+    .footer-section-child {
+
+        padding: 10px 10px;
+
+    }
+
+
+
+    /* footer section close  */
+
+}
+
+
+
+
+/* extra large */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    /* banner section open */
+
+    .banner-section {
+
+
+        background-size: 100% 100%;
+        background-position: center center;
+
+
+    }
+
+    .banner-section-child {
+
+        width: 60%;
+
+    }
+
+    .banner-section-child h1 {
+
+        font-size: 60px;
+
+    }
+
+    .banner-section-child P {
+        font-size: 24px;
+    }
+
+    .cmn-btn {
+
+        font-size: 18px;
+        padding: 14xp 20px;
+
+
+
+
+    }
+
+    /* banner section close */
+
+    /* about section open */
+
+    .about-us-section-child {
+
+        justify-content: space-between;
+
+    }
+
+    .heading-2 {
+
+        font-size: 38px;
+    }
+
+    .cmn-btn {
+
+        font-size: 18px;
+        padding: 14xp 20px;
+
+
+
+    }
+
+    /* about section close */
+
+    /* academics card section open */
+
+
+    .academis-section-child {
+
+
+        padding: 0px 10px;
+
+    }
+
+
+    /* academics card section close */
+
+    /* our mangment system open */
+    .heading-2 {
+        font-size: 38px;
+    }
+
+    /* our mangment system close */
+
+    /* education logo section open */
+
+    .font {
+
+        margin: 0px 10px;
+
+    }
+
+    /* education logo section close  */
+
+    /* our popular course section open */
+
+
+    .popular-course-section-child {
+        padding: 0px 10px;
+    }
+
+
+    /* our popular course section close */
+
+    /* our experience teachers section open */
+
+
+    .teachers-section-child {
+        padding: 0px 10px;
+    }
+
+
+    /* our experience teachers section close */
+
+    /* Premium Learning Experience section open  */
+    .heading-2 {
+        font-size: 38px;
+    }
+
+    /* Premium Learning Experience section close */
+
+    /* our recently blog section open  */
+
+    .blog-card-main {
+        padding: 0px 10px;
+    }
+
+    .heading-2 {
+        font-size: 38px;
+    }
+
+
+    /* our recently blog section close*/
+
+    /* student review section open*/
+
+    .student-review-section-child {
+        padding: 0px 10px;
+    }
+
+    /* student review section close */
+
+    /* online learning video section open*/
+
+    .video-learning {
+
+        width: 94%;
+
+        margin: 0px 30px;
+    }
+
+
+
+    .slick-items iframe {
+
+        /* margin: 124%; */
+        width: 100%;
+    }
+
+    .slider-video {
+        margin: 0px 10px;
+        max-width: 100%;
+    }
+
+    .heading-2 {
+        font-size: 38px;
+    }
+
+    /* online learning video section close*/
+
+
+    /* our student gallery section open */
+
+    .gallery-section-child {
+        padding: 0px 10px;
+    }
+
+    .heading-2 {
+        font-size: 38px;
+    }
+
+
+    /* our student gallery section close */
+
+    /* contact section open */
+
+    .contact-us-section-child {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .contact-left,
+    .contact-us {
+
+        width: 50%;
+
+    }
+
+    input {
+
+        padding: 10px 295px 9px 9px;
+
+
+    }
+
+    textarea{
+
+        width: 83%;
+
+    }
+
+    .contact-left iframe {
+        width: 100%;
+    }
+
+
+
+    /* contact section close */
+    /* company logo section open */
+
+
+
+    .company-logo {
+
+        max-width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .comapny-logo-section-child {
+
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+    .heading-2 {
+        font-size: 38px;
+    }
+
+
+    /* company logo section close */
+
+
+
+    /* footer section open */
+
+    .footer-section-child {
+
+        padding: 20px 20px;
+
+    }
+
+    .subscribe-section-child a{
+
+        transform: translate(-143px, -4px);
+
+    }
+
+
+    /* footer section close  */
+
+
+
+
+
+
+
+
+}
